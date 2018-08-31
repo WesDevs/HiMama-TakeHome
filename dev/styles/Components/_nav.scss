@@ -1,0 +1,44 @@
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    background: $medBlue;
+
+    div {
+        display: flex;
+        li {
+
+            :hover {
+                background: $darkBlue;
+            }
+
+            a {
+                font-size: 1.7rem;
+                padding: 20px;
+                color: white;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+@media (max-width: 460px) {
+    .top-nav {
+        padding: 10px 0 0 0;
+        flex-direction: column;
+        img {
+            height: 50px;
+            margin-bottom: 20px;
+        }
+        div {
+            height: 30px;
+            li {
+                a {
+                    padding: 10px;
+                    font-size: 1.4rem;
+                }
+            }
+        }
+    }
+}

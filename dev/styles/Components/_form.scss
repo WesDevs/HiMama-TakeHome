@@ -1,0 +1,123 @@
+form {
+    max-width: 700px;
+    padding: 40px;
+    background: $lightBlue;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 60px;
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        h3 {
+            width: 100%;
+            display: block;
+            font-size: 2rem;
+        }
+        li {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            margin: 10px 0;
+            label {
+                font-family: $sans;
+                font-size: 1.5rem;
+                font-weight: bold;
+            }
+            &:nth-child(4) {
+                display: block;
+                width: 80%;
+                margin: 20px 0;
+                padding: 5px;
+               input {
+                margin: 10px 0;
+                padding: 0;
+                margin: 20px 0;
+                border: none;
+               }
+            }
+            input {
+                width: 80%;
+                height: 40px;
+                font-size: 1.4rem;
+                font-family: $sans;
+                padding: 0 5px;
+                border: 2px solid rgb(185, 185, 185);
+                &:focus {
+                    border-bottom: 4px solid $medOrange;
+                }
+            }
+            input[type=radio] {
+                height: auto;
+                width: auto;
+            }
+            &:nth-child(8),
+            &:nth-child(9) {
+                ul li {
+                    flex-direction: row;
+                    label {
+                        padding: 4px;
+                    }
+                }
+            }
+        }
+    }
+
+    button {
+        width: 100px;
+        padding: 10px 15px;
+        font-size: 1.4rem;
+        font-family: $bree;
+        background: $medOrange;
+        border-radius: 4px;
+        border: none;
+        a {
+            text-decoration: none;
+            color: black;
+        }
+        &:hover,
+        &:active {
+            background: $lightOrange;
+            color: white;
+        }
+    }
+}
+
+@media (max-width: 780px) {
+    form {
+        ul {
+            flex-direction: column;
+            h3 {
+                font-size: 1.5rem;
+            }
+            li {
+                width: 100%;
+                text-align: center;
+                input {
+                    width: 100%;
+                    height: 30px;
+                }
+                label {
+                    font-size: 1.3rem;
+                }
+                &:nth-child(4) {
+                    width: 100%;
+                }
+                &:nth-child(8),
+                &:nth-child(9) {
+                    ul li {
+                        flex-direction: row;
+                        width: 100%;
+                        justify-content: center;
+                        label {
+                            padding: 4px;
+                        }
+                    }
+                }
+
+            }
+        }
+        button {
+            margin: 0 auto;
+        }
+    }
+}

@@ -1,0 +1,46 @@
+@import 'setup';
+@import 'typography';
+@import 'utils';
+@import 'Components/nav';
+@import 'Components/referral-section';
+@import 'Components/form';
+@import 'Components/about-section';
+@import 'Components/thanks';
+
+html {
+    font-size: 62.5%;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+    a {
+        text-decoration: none;
+        color: black;
+    }
+}
+
+h1,
+h2,
+h3 {
+    font-family: $bree;
+}
+
+p {
+    font-family: $sans;
+}
+
+.wrapper {
+    width: 90%;
+    margin: 0 auto;
+}
+
+@media (max-width: 800px) {
+    .wrapper {
+        width: 80%;
+    }
+}

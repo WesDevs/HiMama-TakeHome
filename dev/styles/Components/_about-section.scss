@@ -1,0 +1,195 @@
+.about-section {
+    background: $medBlue;
+    padding-top: 60px;
+    
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        max-width: 800px;
+        
+        h3 {
+            font-size:3rem;
+            color: white;
+            text-shadow: 1px 1px 1px rgb(36, 35, 35);
+        }
+
+        .main-text {
+            display: flex;
+            & > div {
+                display: flex;
+                flex-direction: column;
+                width: 60%;
+                margin-right: 20px;
+
+                h1,
+                h3, 
+                p {
+                    margin: 0 0 10px 0;
+                }
+
+                h1 {
+                    font-size: 4rem;
+                    span {
+                        border-bottom: 4px solid $medYellow;
+                    }
+                }
+                h3 {
+                    font-size: 3rem;
+                }
+                p {
+                    font-size: 1.6rem;
+                    a {
+                        text-decoration: none;
+                        font-weight: bold;
+                        color: $medYellow;
+                        text-shadow: 1px 1px 1px solid;
+                        &:hover {
+                            color: $lightYellow;
+                        }
+                    }
+                }
+            }
+            .contact-link {
+                background: $medBlue;
+                width: 40%;
+                margin: 0;
+                a {
+                    text-align: center;
+                    background: $medBlue;
+                    width: 100%;
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        .why-points {
+            div {
+                display: flex;
+                justify-content: space-between;
+                background: white;
+                margin: 20px 0;
+                padding: 0 20px;
+            }
+            .why-text {
+                width: 60%;
+                display: flex;
+                flex-direction: column;
+                h3 {
+                    color: black;
+                    text-shadow: none;
+                    font-size: 3rem;
+                    margin-bottom: 5px;
+                }
+                p {
+                    font-size: 1.4rem;
+                    font-family: $sans;
+                }
+            }
+
+            .why-img {
+                width: 30%;
+                padding: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 750px) {
+    .about-section {
+        .wrapper {
+            .why-points {
+                .why-text {
+                    width: 70%;
+                    h3 {
+                        font-size: 2rem;
+                    }
+                    p {
+                        font-size: 1.3rem;
+                    }
+                }
+                .why-img img {
+                    height: 150px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    .about-section {
+        .wrapper {
+           .main-text {
+                & > div {
+                    h1 {
+                        font-size: 2.5rem;
+                    }
+                    h3 {
+                        font-size: 1.7rem;
+                    }
+                }
+                .contact-link {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    a {
+                        img {
+                            width: 100%;
+                        }
+                    }
+                } 
+           }
+        }
+    }
+}
+
+@media (max-width: 475px) {
+    .about-section {
+        .wrapper {
+            h3 {
+                font-size: 2rem;
+            }
+            .main-text {
+                & > div {
+                    h1 {
+                        font-size:2rem;
+                    }
+                    h3 {
+                      font-size:1.4rem;  
+                    }
+                    p {
+                        font-size: 1.4rem;
+                    }
+                }
+            }
+            .why-points {
+                div {
+                    flex-direction: column;
+                    justify-content: center;
+                }
+
+                .why-text {
+                    width: 100%;
+                    margin-bottom: 0;
+                }
+                .why-img {
+                    margin-top: 0;
+                    width: 100%;
+                    img {
+                        width: auto;
+                        height: 150px;
+                    }
+                } 
+
+            } 
+        }
+    }
+}

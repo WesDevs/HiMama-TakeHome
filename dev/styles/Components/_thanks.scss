@@ -1,0 +1,60 @@
+.thank-you-section {
+    background: $lightBlue;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+        font-size: 4rem;
+        color: white;
+        text-shadow: 1px 1px 1px lightgrey;
+    }
+
+    & > a {
+        color: #d66565;
+        text-decoration: none;
+        font-size: 2.5rem;
+        font-family: $bree;
+        
+        &:hover, 
+        &:active {
+            color: white;
+        } 
+    }
+
+    ul {
+        display: flex;
+        li {
+            margin: 20px;
+
+            a {
+                &:hover svg,
+                &:active svg {
+                    color: white;
+                }
+                svg {
+                    font-size: 3rem;
+                }
+            }
+
+            &:first-child svg {
+                color: $medBlue;
+            }
+
+            &:nth-child(2) svg {
+                color: $medGreen;
+            }
+
+            &:nth-child(3) svg {
+                color: $medPurple;
+            }
+
+            &:last-child svg {
+                color: $medOrange;
+            }
+        }
+    }
+}

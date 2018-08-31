@@ -1,5 +1,2 @@
-# Getting Started
+Hi Himama!
 
-1. `git clone` this repo
-2. `npm install`
-3. enjoy!
